@@ -1,0 +1,9 @@
+this is
+a test
+file
+used to check
+all the
+programs for
+text
+file
+new line is added from question 9

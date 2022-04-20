@@ -1,0 +1,25 @@
+CREATE TABLE PRODUCT_MASTER (  
+PRODUCTNO varchar(6) Check (PRODUCTNO LIKE 'P%') Primary Key,   
+DESCRIPTION varchar(15) NOT NULL,   
+PROFITPERCENT number(4,2) NOT NULL,   
+UNITMEASURE varchar(10) NOT NULL,   
+QTYONHAND number(8) NOT NULL,   
+REORDERLVL number(8) NOT NULL,   
+SELLPRICE number(8,2) Check (SELLPRICE != 0) NOT NULL,   
+COSTPRICE number(8,2) Check (COSTPRICE != 0) NOT NULL  
+);
+
+INSERT ALL  
+  INTO PRODUCT_MASTER values ('P00001','T-Shirts',5.00,'piece',200,50,350.00,250.00) 
+  INTO PRODUCT_MASTER values ('P03453','Shirts',6.00,'piece',150,50,500.00,350.00)  
+  INTO PRODUCT_MASTER values ('P06734','Cotton Jeans',5.00,'piece',100,20,600.00,450.00) 
+  INTO PRODUCT_MASTER values ('P07865','Jeans',5.00,'piece',100,20,750.00,500.00)  
+  INTO PRODUCT_MASTER values ('P07868','Trousers',2.00,'piece',150,50,850.00,550.00) 
+  INTO PRODUCT_MASTER values ('P07885','Pull Overs',2.50,'piece',80,30,700.00,450.00) 
+  INTO PRODUCT_MASTER values ('P07965','Denim Shirts',4.00,'piece',100,40,350.00,250.00) 
+  INTO PRODUCT_MASTER values ('P07975','Lycra Tops',5.00,'piece',70,30,300.00,175.00) 
+  INTO PRODUCT_MASTER values ('P08865','Skirts',5.00,'piece',75,30,450.00,300.00) 
+  SELECT 1 FROM DUAL;
+
+SELECT * FROM PRODUCT_MASTER ;
+
